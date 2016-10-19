@@ -5,13 +5,14 @@
     <script type="text/javascript" src='gen.js'></script>
     <style type="text/css">
         #container {
-            position: absolute;
-            top: 0; left: 0;
-            box-sizing: content-box;
+            left: 20%;
+            position: relative;
             background-image: url('plot.png');
+            background-repeat: no-repeat;
         }
 
         .point {
+            float: left;
             background-color: red;
             position: absolute;
             width: 5px; height: 5px;
@@ -38,14 +39,14 @@
         }
 
         #plot {
-            position: relative;
-            float: left;
+            visibility: hidden;
         }
     </style>
 </head>
 <body>
+    <h1 align="center">Volcano!</h1>
     <div id='container'>
-        <img id='plot' src="plot.png" style="visibility: hidden;" />
+        <img id='plot' src="plot.png" />
     </div>
     <script type="text/javascript">
         const TIMEOUT = 50;

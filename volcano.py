@@ -6,9 +6,9 @@ WIDTH_IN, HEIGHT_IN = 10, 7     # matplotlib doesn't allow resolution (using inc
 
 # Draw four lines (and form a box). All points inside this region will be
 # (scatter-)plotted, whereas those outside will be handed over to HTML
-RECT_X_MIN = None
-RECT_Y_MIN = None
-RECT_X_MAX = None
+RECT_X_MIN = -0.5
+RECT_Y_MIN = None       # setting 'None' extends the edge to the frame
+RECT_X_MAX = 0.5
 RECT_Y_MAX = 1.5
 RECT_OFFSET = 2 * OFFSET    # so that the edges lying over the axes are out of the picture
 
